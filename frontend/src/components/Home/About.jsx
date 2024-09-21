@@ -105,7 +105,7 @@ const About = () => {
           <ul className="home-about-social-links list-inline">
             <li className="list-inline-item">
               <a
-                href="#"
+                href="https://github.com/tonmoy-bhuiyan"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"
@@ -116,7 +116,7 @@ const About = () => {
             </li>
             <li className="list-inline-item">
               <a
-                href="#"
+                href="wwww.twitter.com/TanverH22832"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"
@@ -127,7 +127,7 @@ const About = () => {
             </li>
             <li className="list-inline-item">
               <a
-                href="#"
+                href="www.linkedin.com"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"
@@ -138,7 +138,7 @@ const About = () => {
             </li>
             <li className="list-inline-item">
               <a
-                href="#"
+                href="https://web.facebook.com/tonmoybhuiyan0?mibextid=LQQJ4d&_rdc=1&_rdr"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"

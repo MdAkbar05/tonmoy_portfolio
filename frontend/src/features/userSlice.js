@@ -77,6 +77,10 @@ const userSlice = createSlice({
       // Register user
       .addCase(registerUser.fulfilled, (state, action) => {
         state.isLoading = false;
+      })
+      .addCase(registerUser.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload.message;
       });
   },
 });

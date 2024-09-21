@@ -24,7 +24,9 @@ const handleRegisterUser = async (req, res) => {
     //check user already registered with email
     const existingUser = await User.findOne({ email: email });
     if (existingUser) {
-      throw createHttpError(409, "User already registered with this email");
+      return res
+        .status(409)
+        .json({ message: "User already registered with this email" });
     }
 
     // Function to generate a 6-digit OTP

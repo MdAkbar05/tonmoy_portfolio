@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-const ADMIN_EMAIL = "samratakbar666666@gmail.com";
+const ADMIN_EMAIL = "tonmoy2b@gmail.com";
 
 const ProtectedRoute = ({ children }) => {
   const user = JSON.parse(localStorage.getItem("user"));

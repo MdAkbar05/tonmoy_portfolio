@@ -24,6 +24,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Admin from "./pages/Admin";
 import ProtectedRoute from "./components/protectedRoute";
+import AddProject from "./pages/Admin/AddProject";
+import Projects from "./pages/Admin/Projects";
+import UpdateProject from "./pages/Admin/UpdateProject";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -51,13 +54,17 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route
-            path="/panel"
+            path="/panel/*"
             element={
               <ProtectedRoute>
                 <Admin />
               </ProtectedRoute>
             }
-          />
+          >
+            <Route path="project" element={<Projects />} />
+            <Route path="add-project" element={<AddProject />} />
+            <Route path="update-project" element={<UpdateProject />} />
+          </Route>
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

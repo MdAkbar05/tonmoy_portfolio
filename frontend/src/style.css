@@ -219,7 +219,7 @@ button:focus {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -234,7 +234,7 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
@@ -284,7 +284,6 @@ button:focus {
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: var(--imp-bold-text-secondary) !important;
-  /* color: #be6adf !important; */
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -321,15 +320,15 @@ button:focus {
   }
 }
 .backdrop-blur {
-  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-  backdrop-filter: blur(10px); /* Backdrop blur */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  border-radius: 15px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 .yellow {
-  color: #f0db4f; /* A nice yellow color */
+  color: #f0db4f;
 }
 
 .home-about-section {
@@ -337,13 +336,7 @@ button:focus {
   padding: 100px 0 !important;
 }
 
-/* .home-about-section {
-  position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
-  /* background-image: var(--image-gradient), url('./assets/home-bg.jpg'); */
-/* } */
-*/ .home-about-description {
+.home-about-description {
   color: white !important;
   padding-top: 0px !important;
   padding-bottom: 20px !important;
@@ -533,7 +526,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  /* background-image: var(--section-background-color) !important; */
 }
 
 .project-card {
@@ -546,7 +538,6 @@ button:focus {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgb(20, 148, 233) !important;
-  /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -556,7 +547,6 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  /* box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important; */
   box-shadow: 0 4px 5px 3px rgba(20, 148, 233, 1) !important;
 }
 
@@ -604,20 +594,15 @@ button:focus {
 }
 
 .btn-primary {
-  /* color: #fff !important; */
   color: rgb(24, 2, 44) !important;
   background-color: #1494e9 !important;
   border-color: #1494e9 !important;
-  /* background-color: #623686 !important;
-  border-color: #623686 !important; */
 }
 
 .btn-primary:hover {
   color: #fff !important;
   background-color: #1494e9 !important;
   border-color: #1494e9 !important;
-  /* background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important; */
 }
 .btn:focus {
   outline: none !important;

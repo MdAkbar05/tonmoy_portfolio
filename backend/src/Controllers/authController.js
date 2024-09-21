@@ -15,12 +15,9 @@ const handleLogin = async (req, res, next) => {
     const users = await User.findOne({ email: email });
 
     if (!users) {
-      return res
-        .status(401)
-        .json({
-          message:
-            "User does not exist with this email. Please register first.",
-        });
+      return res.status(401).json({
+        message: "User does not exist with this email. Please register first.",
+      });
     }
     // compare the password
     const isPassword = await bcrpt.compare(password, users.password);
@@ -59,11 +56,10 @@ const handleLogout = async (req, res, next) => {
   try {
     res.clearCookie("accessToken");
     res.clearCookie("refreshToken");
-    console.log(req.cookie);
     // Success response
     return res.status(200).json({ message: "User Logout successfully" });
   } catch (error) {
-    res.status(500).json({ message: " Logout not successful", error });
+    res.status(500).json({ message: " Logout not successfull", error });
   }
 };
 const handleRefreshToken = async (req, res, next) => {
@@ -71,7 +67,6 @@ const handleRefreshToken = async (req, res, next) => {
     const oldCookies = req.cookies.refreshToken;
     // Verify cookies
     const decodedRefreshToken = jwt.verify(oldCookies, jwtRefreshKey);
-    console.log("reched 69");
 
     if (!decodedRefreshToken) {
       throw createError(401, "Invalid refresh token");

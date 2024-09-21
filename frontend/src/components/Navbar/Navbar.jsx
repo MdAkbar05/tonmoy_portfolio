@@ -120,8 +120,8 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex gap-4">
-          {user && user.email === "samratakbar666666@gmail.com" && (
-            <Link className="btn btn-danger text-light" to="/panel">
+          {user && user.email === "tonmoy2b@gmail.com" && (
+            <Link className="btn btn-danger text-light" to="/panel/project">
               Panel
             </Link>
           )}
