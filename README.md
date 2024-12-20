@@ -34,3 +34,17 @@ The page will reload if you make edits.
 
 ### Show some ❤️&nbsp; by giving the star :star: to this repository!!
 <h1 align=center>😊  Happy Developer 😊 </h1>
+
+
+MONGODB_URL="mongodb+srv://samratakbar667466:samratDB667466@cluster0.6dxjjcl.mongodb.net/TonmoyDB"
+
+PORT = 5000
+
+JWT_ACTIVATION_KEY=HEWRIWEH432U43HWEJH_@$%
+JWT_ACCESS_KEY=ANY_KEY_HERE
+JWT_REFRESH_KEY=RRRRRFFFFFFSSSSHHH
+JWT_OTP_KEY=fdsaefhierfeirfds
+
+SMTP_USERNAME=samratakbar667466@gmail.com
+SMTP_PASSWORD=ngevstpgxtaegxka
+
